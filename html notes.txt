@@ -1,0 +1,104 @@
+html notes
+
+•Tag Syntax
+- Element names surrounded by angle brackets
+- Normally come in pairs (Start tag and end tag)
+- End tag is usually the same but with a forward slash
+- Some tags close themselves(Remnant of XHTML)
+•Format: 
+<tagname>content</tagname> 
+<h1>About us</h1>
+<p>This is a paragraph</p>
+<br/> // self closing, it is used to break. <br> is okay in HTML5
+
+•html page structure:
+<html>
+	<head>
+		<title>Page title</title>
+	</head>
+	<body>
+		<h1>This is a heading</h1>
+		<p>This is a paragraph.</p>
+		<p>This is another paragraph.</p>
+	</body>
+</html>
+
+•Page Structure(actual):
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page title</title>
+	</head>
+	<body>
+		<h1>My First Heading</h1>
+		<p>My first Paragraph.</p>
+	</body>
+</html>
+
+•Inline .vs Block Level Elements
+	*Inline Elements:
+		- Do not start on a new line
+		- Take only the necessary width
+	Inline level:
+	<span>, <img>, <a>
+
+	*Block Elements:
+		- Start on a new line
+		- Take full width available
+	Block level:
+	<div>,<h1>-<h6>,<p>,<form>
+
+<strong></strong> //Is used to bold the text inside the tagname
+<em></em> //words/sentence inside the tag will be italicized 
+<a href = "" target = "_blank"></a> //Used to link the words inside the anchor tagname, target = "_blank" is used to make the user not to leave the site. In other words it will redirect the users to a different tab
+
+•Tag Attributes
+- All tags can have attributes
+- Provide information about an element
+- Placed within the start tag
+- Key/Value pairs (id="someID")
+
+Format:
+<tagame attributename="attributevalue">content</tagname>
+EX:
+<h1 title = "My Company">About Us</h1>
+
+
+•Table
+  Format
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Age</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Andrew Sencil</td>
+			<td>sencilmarkandrew30@gmail.com</td>
+			<td>22</td>
+		</tr>
+	</tbody>
+</table>
+
+•Form
+
+<hr> //This gives a horizontal line
+<form action = "process.php" method = "POST"> //This directs to the form inside the action
+	<label>First Name</label>
+	<input type = "text" name = "firstName"></input>
+</form>
+
+HTML5 semantics tags
+- A semantic element clearly describes its meaning to both the browser and the developer
+Examples: 
+	<header></header>
+	<footer></footer>
+	<aside></aside>
+	<main></main>
+	<article></article>
+	<nav></nav>
+	<section></section>
+	<details></details>
